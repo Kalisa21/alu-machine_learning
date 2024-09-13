@@ -10,4 +10,3 @@ def cat_arrays(arr1, arr2):
     arr2: list of ints/floats
     """
     return arr1 + arr2
-    

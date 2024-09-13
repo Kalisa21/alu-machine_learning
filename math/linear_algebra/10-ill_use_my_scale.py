@@ -9,4 +9,3 @@ def np_shape(matrix):
     returns the shape of a numpy.ndarray
     """
     return tuple(matrix.shape)
-    

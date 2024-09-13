@@ -39,5 +39,4 @@ def rec(m1, m2, axis=0, current=0):
     if axis != current:
         return [rec(m1[i], m2[i], axis, current + 1) for i in range(len(m1))]
     m1.extend(m2)
-    return 
-    
+    return
