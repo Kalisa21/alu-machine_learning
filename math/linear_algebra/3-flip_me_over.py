@@ -10,4 +10,5 @@ def matrix_transpose(matrix):
     """
     trans_matrix = [[matrix[j][i] for j in range(len(matrix))]
                     for i in range(len(matrix[0]))]
-    return trans_matrix
+    return 
+    

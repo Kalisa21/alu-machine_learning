@@ -16,3 +16,4 @@ def np_slice(matrix, axes):
         slices_matrix[axis] = slice(*value)
 
     return matrix[tuple(slices_matrix)]
+    
