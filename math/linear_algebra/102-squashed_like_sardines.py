@@ -1,14 +1,9 @@
 #!/usr/bin/env python3
-'''
-    A function def cat_matrices(mat1, mat2, axis=0)
-    that concatenates two matrices along a specific axis
-'''
+""" defines function that concatenates two matrices along a specific axis """
 
 
 def matrix_shape(matrix):
-    """
-        Get the matrix shape
-    """
+    """ returns list of integers representing dimensions of given matrix """
     matrix_shape = []
     while (type(matrix) is list):
         matrix_shape.append(len(matrix))
@@ -17,9 +12,7 @@ def matrix_shape(matrix):
 
 
 def cat_matrices(mat1, mat2, axis=0):
-    """
-        concatenate a matrix
-    """
+    """ returns concatenation of two matrices along a specific axis """
     from copy import deepcopy
     shape1 = matrix_shape(mat1)
     shape2 = matrix_shape(mat2)
@@ -33,10 +26,9 @@ def cat_matrices(mat1, mat2, axis=0):
 
 
 def rec(m1, m2, axis=0, current=0):
-    """
-        Do some reclusive calling
-    """
+    """ recursively calls function until gets to level to extend """
     if axis != current:
         return [rec(m1[i], m2[i], axis, current + 1) for i in range(len(m1))]
     m1.extend(m2)
     return m1
+    
