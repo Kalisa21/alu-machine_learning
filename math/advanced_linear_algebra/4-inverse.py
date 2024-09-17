@@ -137,3 +137,4 @@ def inverse(matrix):
         for j in range(size):
             adjugate_matrix[i][j] /= det
     return adjugate_matrix
+    

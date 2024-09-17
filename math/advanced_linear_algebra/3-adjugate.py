@@ -115,3 +115,4 @@ def adjugate(matrix):
             adjugate_row.append(cofactor_matrix[j][i])
         adjugate_matrix.append(adjugate_row)
     return adjugate_matrix
+    
