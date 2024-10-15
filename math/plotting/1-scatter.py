@@ -13,5 +13,5 @@ plt.title("Men's Height vs Weight")
 plt.xlabel('Height (in)')
 plt.ylabel('Weight (lbs)')
 
-plt.plot(x, y,'mo', markersize=3)
+plt.plot(x, y, 'mo', markersize=3)
 plt.show()

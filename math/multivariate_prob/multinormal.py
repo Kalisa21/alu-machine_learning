@@ -19,6 +19,7 @@ class MultiNormal:
     - cov: a numpy.ndarray of shape (d, d) containing the covariance
     matrix data.
     """
+
     def __init__(self, data):
         """
         This method initializes the MultiNormal class.
@@ -52,4 +53,3 @@ class MultiNormal:
         pdf *= np.exp(-0.5 * mult)
         pdf = pdf[0][0]
         return pdf
-        

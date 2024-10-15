@@ -12,7 +12,7 @@ norm_data = data - data_means
 _, _, Vh = np.linalg.svd(norm_data)
 pca_data = np.matmul(norm_data, Vh[:3].T)
 
-# my code 
+# my code
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1, projection='3d')
 ax.scatter(pca_data[:, 0], pca_data[:, 1], pca_data[:, 2],
